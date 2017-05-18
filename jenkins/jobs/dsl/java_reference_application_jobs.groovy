@@ -66,7 +66,7 @@ buildAppJob.with {
     }
     steps {
         maven {
-            goals('clean install -DskipTests')
+            goals('clean deploy -DskipTests')
             mavenInstallation("ADOP Maven")
         }
     }
